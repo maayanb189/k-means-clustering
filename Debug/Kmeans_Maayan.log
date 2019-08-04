@@ -1,0 +1,30 @@
+﻿  Utils.cpp
+  ParallelMain.cpp
+c:\users\afeka\documents\visual studio 2015\projects\kmeans_maayan\kmeans_maayan\parallelmain.cpp(152): warning C4068: unknown pragma
+c:\users\afeka\documents\visual studio 2015\projects\kmeans_maayan\kmeans_maayan\parallelmain.cpp(207): warning C4068: unknown pragma
+  MpiUtils.cpp
+  Main.cpp
+  FileHandler.cpp
+c:\users\afeka\documents\visual studio 2015\projects\kmeans_maayan\kmeans_maayan\filehandler.cpp(13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\afeka\documents\visual studio 2015\projects\kmeans_maayan\kmeans_maayan\filehandler.cpp(26): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+c:\users\afeka\documents\visual studio 2015\projects\kmeans_maayan\kmeans_maayan\filehandler.cpp(47): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+c:\users\afeka\documents\visual studio 2015\projects\kmeans_maayan\kmeans_maayan\filehandler.cpp(60): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  Generating Code...
+MpiUtils.obj : error LNK2019: unresolved external symbol _MPI_Type_commit referenced in function "void __cdecl MpiUtils_createAlgoParamsType(void)" (?MpiUtils_createAlgoParamsType@@YAXXZ)
+MpiUtils.obj : error LNK2019: unresolved external symbol _MPI_Bcast referenced in function "void __cdecl MpiUtils_BcastAlgoParams(void)" (?MpiUtils_BcastAlgoParams@@YAXXZ)
+ParallelMain.obj : error LNK2001: unresolved external symbol _MPI_Bcast
+MpiUtils.obj : error LNK2019: unresolved external symbol _MPI_Gatherv referenced in function "void __cdecl collectPoints(int,struct Point *,struct Point *)" (?collectPoints@@YAXHPAUPoint@@0@Z)
+MpiUtils.obj : error LNK2019: unresolved external symbol _MPI_Scatterv referenced in function "void __cdecl distributePoints(int,struct Point *,struct Point *)" (?distributePoints@@YAXHPAUPoint@@0@Z)
+MpiUtils.obj : error LNK2019: unresolved external symbol _MPI_Comm_size referenced in function "void __cdecl MpiUtils_initProgram(int *,char * * *,int *,int *)" (?MpiUtils_initProgram@@YAXPAHPAPAPAD00@Z)
+MpiUtils.obj : error LNK2019: unresolved external symbol _MPI_Comm_rank referenced in function "void __cdecl MpiUtils_initProgram(int *,char * * *,int *,int *)" (?MpiUtils_initProgram@@YAXPAHPAPAPAD00@Z)
+MpiUtils.obj : error LNK2019: unresolved external symbol _MPI_Init referenced in function "void __cdecl MpiUtils_initProgram(int *,char * * *,int *,int *)" (?MpiUtils_initProgram@@YAXPAHPAPAPAD00@Z)
+MpiUtils.obj : error LNK2019: unresolved external symbol _MPI_Type_create_struct referenced in function "void __cdecl MpiUtils_createAlgoParamsType(void)" (?MpiUtils_createAlgoParamsType@@YAXXZ)
+ParallelMain.obj : error LNK2019: unresolved external symbol _MPI_Send referenced in function "void __cdecl determineAlgoTerminate(int,int,int *)" (?determineAlgoTerminate@@YAXHHPAH@Z)
+ParallelMain.obj : error LNK2019: unresolved external symbol _MPI_Recv referenced in function "void __cdecl determineAlgoTerminate(int,int,int *)" (?determineAlgoTerminate@@YAXHHPAH@Z)
+ParallelMain.obj : error LNK2019: unresolved external symbol _MPI_Wtime referenced in function _main
+C:\Program Files\MPICH2\lib\mpi.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Kmeans_Maayan\Debug\Kmeans_Maayan.exe : fatal error LNK1120: 11 unresolved externals
